@@ -7,7 +7,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
     const datas = getData();
-    console.log(datas);
     res.render('index', {
         datas: datas
     });
